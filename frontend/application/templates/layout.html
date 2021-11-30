@@ -9,35 +9,11 @@
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     
-    <head>
-        <title>Brainstorm Forum - {{ title }}</title>
-    </head>
     
-    <style>
-        .button {
-          background-color: #087fb6;
-          border: none;
-          color: white;
-          padding: 10px 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 20px;
-          margin: 4px 2px;
-          cursor: pointer;
-        }
-    </style>
 </head>
     <body style="background-color: rgb(208, 253, 199);">
         <h1>Brainstorm Forum - {{ title }}</h1>
-        <p>
-            <a href="{{ url_for('home') }}">
-                <button class="button">Home</button>
-            </a>
-            <a href="{{ url_for('create_task') }}">
-                <button class="button">Add Task</button>
-            </a>
-        </p>
+
         <header class="site-header">
             <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
               <div class="container">
